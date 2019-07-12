@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="htt://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="  css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="  css/signin.css" rel="stylesheet">
+<script type="text/javascript" src=" js/jquery-3.3.0.min.js"></script>
+<script type="text/javascript" src=" js/bootstrap.min.js"></script>
+<script type="text/javascript" src=" js/bootstrap.js"></script>
+<link href=" css/bootstrap.css" rel="stylesheet" />
+<link href="css/dashboard.css" rel="stylesheet">
+<style type="text/css">
+#ct {
+	font-size: 30px;
+	color: white;
+}
+
+}
+#l {
+	list-style-image: url(../static/images/x.png);
+	display: inline;
+}
+
+#x {
+	position: fixed;
+	top: 51px;
+	width: 265px;
+	height: 100%;
+	border: 3px #12B7F5 solid;
+}
+</style>
+</head>
+<body id="body">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top"
+		style="background: #23527C;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" style="font-size: 30px;">CRBS-会议预约管理系统</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a th:text="${user.managerName}"></a></li>
+					<li><a href="#">退出管理系统</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div id="x">
+		<div style="border: 1px #12B7F5 solid; width: 260px; height: 35px;">
+			<form th:action="@{/geren}" method="post">
+				<input type="submit" value="个人中心" class="btn btn-default"
+					style="width: 258px; height: 35px;">
+			</form>
+		</div>
+		<div style="border: 1px #12B7F5 solid; width: 260px; height: 35px;">
+			<form th:action="@{/houtai}" method="post">
+				<input type="submit" value="后台管理" class="btn btn-default"
+					style="width: 258px; height: 35px;">
+			</form>
+		</div>
+		<div style="border: 1px #12B7F5 solid; width: 260px; height: 35px;">
+			<form th:action="@{/upload1}" method="post">
+				<input type="submit" value="文件上传" class="btn btn-default"
+					style="width: 258px; height: 35px;">
+			</form>
+		</div>
+
+	</div>
+
+	</div>
+	</div>
+
+
+	<div style="border: 1px #12B7F5 solid; width: 260px; height: 35px;">
+		<form th:action="@{/upload1}" method="post">
+			<input type="submit" value="文件上传" class="btn btn-default"
+				style="width: 258px; height: 35px;">
+		</form>
+	</div>
+
+	</div>
+	</div>
+	<div style="position: absolute; left: 270px; top: 53px; width: 1300px;">
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		</div>
+		<h2 class="sub-header">华信智源历史会议</h2>
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>会议开始时间</th>
+						<th>会议内容</th>
+						<th>参会人员</th>
+						<th>结束时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1,001</td>
+						<td>Lorem</td>
+						<td>ipsum</td>
+						<td>dolor</td>
+						<td>sit</td>
+					</tr>
+					<tr>
+						<td>1,002</td>
+						<td>amet</td>
+						<td>consectetur</td>
+						<td>adipiscing</td>
+						<td>elit</td>
+					</tr>
+					<tr>
+						<td>1,003</td>
+						<td>Integer</td>
+						<td>nec</td>
+						<td>odio</td>
+						<td>Praesent</td>
+					</tr>
+					<tr>
+						<td>1,003</td>
+						<td>libero</td>
+						<td>Sed</td>
+						<td>cursus</td>
+						<td>ante</td>
+					</tr>
+					<tr>
+						<td>1,004</td>
+						<td>dapibus</td>
+						<td>diam</td>
+						<td>Sed</td>
+						<td>nisi</td>
+					</tr>
+					<tr>
+						<td>1,005</td>
+						<td>Nulla</td>
+						<td>quis</td>
+						<td>sem</td>
+						<td>at</td>
+					</tr>
+					<tr>
+						<td>1,006</td>
+						<td>nibh</td>
+						<td>elementum</td>
+						<td>imperdiet</td>
+						<td>Duis</td>
+					</tr>
+					<tr>
+						<td>1,007</td>
+						<td>sagittis</td>
+						<td>ipsum</td>
+						<td>Praesent</td>
+						<td>mauris</td>
+					</tr>
+					<tr>
+						<td>1,008</td>
+						<td>Fusce</td>
+						<td>nec</td>
+						<td>tellus</td>
+						<td>sed</td>
+					</tr>
+					<tr>
+						<td>1,009</td>
+						<td>augue</td>
+						<td>semper</td>
+						<td>porta</td>
+						<td>Mauris</td>
+					</tr>
+					<tr>
+						<td>1,010</td>
+						<td>massa</td>
+						<td>Vestibulum</td>
+						<td>lacinia</td>
+						<td>arcu</td>
+					</tr>
+					<tr>
+						<td>1,011</td>
+						<td>eget</td>
+						<td>nulla</td>
+						<td>Class</td>
+						<td>aptent</td>
+					</tr>
+					<tr>
+						<td>1,012</td>
+						<td>taciti</td>
+						<td>sociosqu</td>
+						<td>ad</td>
+						<td>litora</td>
+					</tr>
+					<tr>
+						<td>1,013</td>
+						<td>torquent</td>
+						<td>per</td>
+						<td>conubia</td>
+						<td>nostra</td>
+					</tr>
+					<tr>
+						<td>1,014</td>
+						<td>per</td>
+						<td>inceptos</td>
+						<td>himenaeos</td>
+						<td>Curabitur</td>
+					</tr>
+					<tr>
+						<td>1,015</td>
+						<td>sodales</td>
+						<td>ligula</td>
+						<td>in</td>
+						<td>libero</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>

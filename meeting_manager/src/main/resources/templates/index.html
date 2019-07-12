@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="htt://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Signin Template for Bootstrap</title>
+<!-- Bootstrap core CSS -->
+<link href=" css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="  css/signin.css" rel="stylesheet">
+<script type="text/javascript" src=" js/jquery-3.3.0.min.js"></script>
+<script type="text/javascript" src=" js/bootstrap.min.js"></script>
+<script type="text/javascript" src=" js/bootstrap.js"></script>
+<link href=" css/bootstrap.css" rel="stylesheet" />
+<link href=" css/zjw.css" rel="stylesheet" />
+</head>
+<style>
+#body {
+	background-image: url(images/8.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.container {
+	position: absolute;
+	top: 225px;
+	left: 500px;
+	border: 1px black solid;
+	height: 300px;
+	width: 600px;
+}
+
+#dl {
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	width: 380px;
+}
+
+.form-control {
+	width: 380px
+}
+</style>
+
+<body id="body">
+	<div></div>
+	<div class="container">
+		<form th:action="@{/manager/yuyue}" method="post">
+			<h2 style="text-align: center;">会议预约管理系统</h2>
+			<br>
+			<div style="position: relative; left: 100px;">
+				<input class="form-control" type="text" name="username"
+					placeholder="username">
+				</tr>
+				</br> <input class="form-control" type="password" name="password"
+					placeholder="Password"> </br>
+				<p style="color: red; position: absolute; top: 100px; left: 130px;"
+					th:text="${error}"></p>
+				<button id="dl" class="btn btn-info" type="submit">登陆</button>
+			</div>
+			<!-- 	  <input id="zc" type="button" value="注册" class="btn btn-warning" style="position: absolute; top: 155px; left: 150px; display: none;" -->
+			<!--      onclick="javascript:window.location.href='reg'"/> -->
+		</form>
+	</div>
+</body>
+</html>
